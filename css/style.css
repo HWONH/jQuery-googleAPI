@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+html, body{margin: 0;padding: 0;}
+header, section, article, aside, nav, main, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, main:after, footer:after{content: '';display: block;clear: both;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0;padding: 0;list-style: none;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+.contact{width: 800px;margin: 0 auto;padding: 40px 0;}
+.contact h2{font-size: 24px;color: #555555;padding-bottom: 20px;}
+.contact fieldset legend{font-size: 20px;font-weight: bold;}
+.contact fieldset .formlist{padding: 10px;}
+.contact fieldset .formlist ul{}
+.contact fieldset .formlist ul li{padding: 10px 0;font-size: 0;}
+.contact fieldset .formlist ul li label{display: inline-block;vertical-align: top;width: 80px;font-size: 16px;font-weight: bold;word-break: keep-all;}
+.contact fieldset .formlist ul li .inputBox{display: inline-block;vertical-align: top;width: calc(100% - 80px);padding: 0 10px;}
+.contact fieldset .formlist ul li .inputBox input{width: 100%;padding: 0 10px;border: 1px solid #888;line-height: 36px;font-size: 16px;border-radius: 4px;}
+.contact fieldset .formlist ul li .inputBox textarea{width: 100%;padding: 0 10px;border: 1px solid #888;line-height: 1.5;font-size: 16px;border-radius: 4px;}
+.contact fieldset .formlist .btn_box{padding-top: 20px;border-top: 1px solid #888;padding-left: 10px;padding-right: 10px;text-align: right;}
+.contact fieldset .formlist .btn_box .command_btn{padding: 4px 12px;border-radius: 4px;background-color: #0066dd;border: none;color: #ffffff;}
+
+.contact fieldset .thankyou_message{position: fixed;top: 0;left: 0;bottom: 0;right: 0;background-color: rgba(0,0,0,.5);z-index: 10;display: none;}
+.contact fieldset .thankyou_message section{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 500px;padding: 20px; background-color: #ffffff;border-radius: 4px;box-shadow: 0 0 4px #000;}
+.contact fieldset .thankyou_message section h1{color: #333333;font-size: 24px;padding-bottom: 20px;}
+.contact fieldset .thankyou_message section p{font-size: 17px;color: #777777;padding-bottom: 10px;border-bottom: 1px solid #aaaaaa;}
+.contact fieldset .thankyou_message section .btn_box{padding-top: 10px;text-align: right;}
+.contact fieldset .thankyou_message section .btn_box a{display: inline-block;padding: 4px 12px;color: #ffffff;background: #dd3300;border-radius: 4px;font-size: 17px;}

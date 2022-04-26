@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구글 API 이용한 메일 메시지 받기</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="contact">
+        <h2>Contant Us</h2>
+        <form class="gform" name="contactUs" method="post" action="https://script.google.com/macros/s/AKfycbwXPfOlQvb7CDaiT0YTPCCQh07hJHp9AnTRjN9w/exec">
+            <fieldset>
+                <legend>구글 메일로 발송</legend>
+                <!-- 발송인 이름, 발송인 이메일, 메시지 -->
+                <div class="formlist">
+                    <ul>
+                        <li>
+                            <label for="name">이름</label>
+                            <span class="inputBox">
+                                <input type="text" id="name" name="name" placeholder="이름을 입력해 주세요." required>
+                            </span>
+                        </li>
+                        <li>
+                            <label for="email">답변 받을 이메일</label>
+                            <span class="inputBox">
+                                <input type="text" id="email" name="email" placeholder="sample@mail.com" required>
+                            </span>
+                        </li>
+                        <li>
+                            <label for="message">문의 내용</label>
+                            <span class="inputBox">
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="궁금한 사항을 입력해주세요."></textarea>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="btn_box">
+                        <button type="submit" class="command_btn">문의하기</button>
+                    </div>
+                </div>
+
+                <div class="thankyou_message">
+                    <section>
+                        <h1>작성된 내용이 모두 전송되었습니다.</h1>
+                        <p>메일 확인 후 연락드리겠습니다.</p>
+                        <div class="btn_box">
+                            <a href="#" class="close">닫기</a>
+                        </div>
+                    </section>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/form-submission-handler.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
